@@ -1,0 +1,84 @@
+{
+  "Plants": ["PlantA", "PlantB", "PlantC", "PlantD"],
+  "Equipments": ["Equipment1", "Equipment2", "Equipment3", "Equipment4"],
+  "Sensors": ["Sensor1", "Sensor2", "Sensor3", "Sensor4", "Sensor5", "Sensor6"],
+  "PlantsMapping": {
+    "PlantA": ["Equipment1", "Equipment3"],
+    "PlantB": ["Equipment2", "Equipment4"]
+  },
+  "EquipmentsMapping": {
+    "Equipment1": [
+      {
+        "id": "Sensor1",
+        "start_time": "10:00",
+        "end_time": "15:00"
+      },
+      {
+        "id": "Sensor2",
+        "start_time": "11:00",
+        "end_time": "14:30"
+      },
+      {
+        "id": "Sensor3",
+        "start_time": "03:45",
+        "end_time": "21:00"
+      }
+    ],
+    "Equipment2": [
+      {
+        "id": "Sensor2",
+        "start_time": "11:00",
+        "end_time": "12:00"
+      },
+      {
+        "id": "Sensor4",
+        "start_time": "07:00",
+        "end_time": "14:30"
+      },
+      {
+        "id": "Sensor5",
+        "start_time": "13:45",
+        "end_time": "20:45"
+      },
+      {
+        "id": "Sensor6",
+        "start_time": "19:45",
+        "end_time": "20:45"
+      }
+    ],
+    "Equipment3": [
+      {
+        "id": "Sensor1",
+        "start_time": "01:00",
+        "end_time": "18:00"
+      },
+      {
+        "id": "Sensor3",
+        "start_time": "10:10",
+        "end_time": "17:30"
+      },
+      {
+        "id": "Sensor4",
+        "start_time": "10:05",
+        "end_time": "21:30"
+      }
+    ],
+    "Equipment4": [
+      {
+        "id": "Sensor2",
+        "start_time": "14:35",
+        "end_time": "19:00"
+      },
+      {
+        "id": "Sensor4",
+        "start_time": "03:05",
+        "end_time": "14:30"
+      },
+      {
+        "id": "Sensor5",
+        "start_time": "04:15",
+        "end_time": "19:00"
+      }
+    ]
+  }
+}
