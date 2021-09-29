@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"errors"
+	"flag"
 	"fmt"
 	"io"
 	"io/ioutil"
@@ -49,8 +50,11 @@ func stringToQuery(str string) (query, error) {
 }
 
 func main() {
+	var path string
+	flag.StringVar(&path, "filepath", "./data.json", "File containing sensor and equipment data")
+	flag.Parse()
 
-	file, err := os.Open("./data.json")
+	file, err := os.Open(path)
 	if err != nil {
 		return
 	}
